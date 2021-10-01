@@ -1,12 +1,10 @@
 {
   "root": true,
-  "parser": "@typescript-eslint/parser", // 👈 ESLint now understands TypeScript syntax
   "env": {
     "browser": true,
     "es2021": true,
     "node": true
   },
-  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "prettier" // 👈 must be last!
