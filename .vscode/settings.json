@@ -1,0 +1,20 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",    // enable prettier as default formatter for all supported filetypes
+  "eslint.probe": [
+    // language identifiers for which the ESLint extension should be activated and should try to validate the file
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown"
+  ],
+  "editor.formatOnSave": false,    // don't use formatOnSave, 
+                                   // instead handle everything through 
+                                   // code actions 👇
+  "editor.codeActionsOnSave": [
+    "source.formatDocument",       // first run Prettier
+    "source.fixAll.eslint"         // then run ESLint
+  ]
+}

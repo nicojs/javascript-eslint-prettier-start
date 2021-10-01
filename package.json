@@ -1,0 +1,24 @@
+{
+  "name": "typescript-eslint-prettier-start",
+  "version": "1.0.0",
+  "description": "1. Install LTS version of Nodejs: https://nodejs.org/",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "./src/person.js",
+    "lint": "npm run lint:tsc && npm run lint:es && npm run lint:format",
+    "lint:tsc": "tsc",
+    "lint:es": "eslint .",
+    "lint:format": "prettier --check .",
+    "lint:fix": "npm run lint:es -- --fix && npm run lint:format -- --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  }
+}
